@@ -1,0 +1,8 @@
+outFolder:/eos/uscms//store/user/sstarko/run_2019_5_23_20_42/
+SingleMuon_TeV__data_2
+SingleMuon_TeV__data_H
+SingleMuon_TeV__data_D
+SingleMuon_TeV__data_E
+SingleMuon_TeV__data_F
+SingleMuon_TeV__data_G
+SingleMuon_TeV__data_C
