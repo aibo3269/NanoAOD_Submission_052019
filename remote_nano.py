@@ -112,7 +112,8 @@ def getDatasetFileList(sample):
  fileList = {}
  for line in output.split(os.linesep):
      file,size=line.split()
-     fileList['root://cms-xrd-global.cern.ch/'+file]=int(size)
+     fileList['root://cmsxrootd.fnal.gov//'+file]=int(size)
+     #fileList['root://cms-xrd-global.cern.ch/'+file]=int(size)
  return fileList
 #__________end be able to read the files via xrootd__________
 
@@ -126,7 +127,7 @@ def getFilesfromFile(cfgFile, options):
             continue
         sample=line.strip()  #Skip the guys who are commented.
         
-        file_lists=bins(getDatasetFileList(sample),640000)  #size in bytes 3GB
+        file_lists=bins(getDatasetFileList(sample),6400)  #size in bytes 3GB
         sampleList[parse_name(sample,options)]=file_lists
     return sampleList
 #__________end list of samples__________
