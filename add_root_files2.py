@@ -53,7 +53,7 @@ def main():
                 options.inputFolder=line.replace("outFolder:","").strip()
                 break
     
-    options.output=os.path.join("/uscms/home/sstarko/nobackup/CMSSW_10_1_9/src/Submission/Submission/",options.output)
+    options.output=os.path.join("/uscms/home/abohenic/nobackup/CMSSW_10_1_9/src/Submission/Submission/",options.output)
     print options.output
     megeRootFiles(options)
     
